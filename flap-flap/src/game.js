@@ -318,16 +318,16 @@ startButton.onclick = function(){
 	let start =  function(){
 		Neuvol = new Neuroevolution({
 			population: userInput(), //популяция наших птичек
-			network:[2, [3], 1], //по идее это нейроны, но перцептрон вроде 1-1-1
-			activation: template[functionActivation()]
+			network:[2, [3], 1], //это многослойный перцептрон теперь
+			activation: template[functionActivation()] //выбор функции активации
 		});
-		game = new Game();
+		game = new Game(); //старт
 		game.start();
 		game.update();
 		game.display();
 	}
 
-	loadImages(sprites, function(imgs){
+	loadImages(sprites, function(imgs){ //старт движения карты
 		images = imgs;
 		start();	
 	})

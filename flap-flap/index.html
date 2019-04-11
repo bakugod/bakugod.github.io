@@ -15,9 +15,11 @@
 			<button onclick="speed(0)">MAX</button> 
 		</div>
 		<div class="inputs">
+			<p>А это птички - от 5 до 100</p>
 			<input class="population" placeholder="Population, default 50">
+			<p>Настроил и запустил? Жми</p>
 			<button class="sub">Press me to start</button>
-			<input>
+			<p>Выбери функцию активации или не взлетишь</p>
 			<select class="select">
 				<option class="name" disabled selected>Function activation</option>
 				<option class="activation" value="1"> Сам придумал </option>
@@ -38,11 +40,12 @@
 		}
 		.block{
 			width: 500px;
+			justify-content: space-between;
 			display: flex;
 		}
-		.block button{
+		.block > button{
 			border: 0px;
-			margin: 5px 5px;
+			max-width: 90px;
 			flex-grow: 1;
 			background-color: lightgreen;
 		}
@@ -68,7 +71,7 @@
 			padding: 12px;
 			text-align: center;
 			border: 1px solid #e6e6e6;
-			margin: 10px 0;
+			margin: 5px 0;
 		}
 		option{
 			text-align: center;
