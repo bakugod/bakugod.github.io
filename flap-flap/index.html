@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flappy Bird</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="content">
+		<canvas id="flappy" width="500" height="512" alt="dh"></canvas><br/>
+		<div class="block">
+			<button onclick="speed(60)">x1</button> 
+			<button onclick="speed(120)">x2</button> 
+			<button onclick="speed(180)">x3</button> 
+			<button onclick="speed(300)">x5</button> 
+			<button onclick="speed(0)">MAX</button> 
+		</div>
+		<div class="inputs">
+			<input class="population" placeholder="Population, default 50">
+			<button class="sub">Press me to start</button>
+			<input>
+			<select class="select">
+				<option class="name" disabled selected>Function activation</option>
+				<option class="activation" value="1"> Сам придумал </option>
+				<option class="activation" value="2"> Гауссова </option>
+				<option class="activation" value="3"> Softsign </option>
+				<option class="activation" value="4"> Тождественная </option>
+			</select>
+		</div>
+		<br/>
+	</div>
+	<style type="text/css">
+		body{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+		}
+		.block{
+			width: 500px;
+			display: flex;
+		}
+		.block button{
+			border: 0px;
+			margin: 5px 5px;
+			flex-grow: 1;
+			background-color: lightgreen;
+		}
+		button:focus{
+			background-color: lightblue;
+		}
+		#text{
+			display: none;
+		}
+		.inputs{
+			display: flex;
+			flex-direction: column;
+			max-width: 500px;
+		}
+		.content{
+			margin-top: 5vw;
+		}
+		.sub{
+			background-color: lightgreen;
+			border: 1px solid transparent;
+		}
+		.select, input, .sub{
+			padding: 12px;
+			text-align: center;
+			border: 1px solid #e6e6e6;
+			margin: 10px 0;
+		}
+		option{
+			text-align: center;
+		}
+	</style>
+	<script src = "src/Neuroevolution.js"></script>
+	<script src = "src/game.js"></script>
+</body>
+</html>
