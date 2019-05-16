@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About me</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+<body>
+	<canvas class="canvas" width="1200" height="1200"></canvas>
+	<section class="contacts">
+		<ul class="info">
+			<li><a href="https://t.me/bakulord">@bakulord</a></li>
+			<li><a href="https://github.com/bakugod">github.com/bakugod</a></li>
+			<li><a href="mailto:bakugod@yandex.ru">bakugod@yandex.ru</a></li>
+		</ul>
+	</section>
+	<div id="App" class="hello">
+		<div v-for="(repo, idx) in items" :key="idx" v-show="repo.show">
+			<a :href="repo.link">{{ repo.name }}</a>
+		</div>
+	</div>
+<script type="text/javascript" src="src/canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript" src="src/vue.js"></script>
+</body>
+</html>
