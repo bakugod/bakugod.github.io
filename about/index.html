@@ -2,27 +2,60 @@
 <html>
 <head>
 	<title>About me</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="src/style.css">
 </head>
 <body>
-	<canvas class="canvas" width="1200" height="1200"></canvas>
-	<section class="contacts">
-		<ul class="info">
-			<li><a href="https://t.me/bakulord">@bakulord</a></li>
-			<li><a href="https://github.com/bakugod">github.com/bakugod</a></li>
-			<li><a href="mailto:bakugod@yandex.ru">bakugod@yandex.ru</a></li>
-			<li><a href="https://ru.wikipedia.org/wiki/ACID">I'm afraid od ACID!</a></li>
-		</ul>
-	</section>
-	<div id="App" class="hello">
-		<div v-for="(repo, idx) in items" :key="idx" v-show="repo.show">
-			<a :href="repo.homepage || repo.link">{{ repo.name }}</a>
-		</div>
+	<div class="slide-1">
+		<section class="contacts">
+			<ul class="info">
+				<li><a href="https://t.me/bakulord">@bakulord</a></li>
+				<li><a href="mailto:bakugod@yandex.ru">bakugod@yandex.ru</a></li>
+				<li><a href="https://github.com/bakugod">github.com/bakugod</a></li>
+				<li><a href="https://ru.wikipedia.org/wiki/ACID">I'm afraid od ACID!</a></li>
+				<li><button class="infoButton">More info</button></li>
+			</ul>
+		</section>
+
 	</div>
-<script type="text/javascript" src="src/canvas.js"></script>
+	<div class="fetching">
+		<span class="progress" style="color: violet">fetching...</span>
+	</div>
+	<div class="slide-2">
+		<section class="container">
+			<div class="container_header">
+				<h1>Ufff, okey</h1>
+				<button class="close"></button>
+			</div>	
+				<span class="greetings"></span>
+				<span class="about"></span>
+				<a class="resume" href="./resume.html">My resume.</a>
+				<button class="showApp">
+					Show apps
+				</button>
+				<div class="wraper hidden">
+					<div id="App" class="hello" >
+						<h1>Deployed apps</h1>
+						<div v-for="(repo, idx) in items" :key="idx" v-show="repo.homepage">
+							<a :href="repo.homepage">{{ repo.name }}</a>
+						</div>
+					</div>
+				</div>
+		</section>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script type="text/javascript">
+const showApp = document.querySelector(".showApp");
+const app = document.querySelector(".wraper");
+showApp.onclick = () => app.className= "wraper";
+</script>
+<script type="text/javascript" src="src/slide.js"></script>
+<script type="text/javascript" src="src/canvas.js"></script>
 <script type="text/javascript" src="src/vue.js"></script>
 </body>
 </html>
