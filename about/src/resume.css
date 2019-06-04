@@ -1,0 +1,143 @@
+body{
+	padding: 0;
+	font: 13px/1.231 arial,helvetica,clean,sans-serif;
+	font-family: Georgia;
+	color: #444;
+}
+
+body, h1, h2, h3, h4, h5, ul, ol, li, div, p{
+	margin: 0;
+}
+
+a{
+	color: #960018;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5{
+	font-weight: normal;
+}
+
+ul, li{
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+.resume{
+	max-width: 73em;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.inner{
+	padding: 10px 80px;
+}
+
+.header{
+	display: flex;
+	margin: 2.5em 0 3em 0;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #ccc;
+}
+
+.header-placeholder{
+	zoom: 1;
+	width: 66%;
+}
+
+.header-placeholder h1{
+	font-size: 48px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.header-placeholder h2{
+	font-size: 150%;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.header-links{
+	display: flex;
+	flex-direction: column;
+	margin: 4px 0 0 13px;
+}
+
+.header-links a{
+	font-size: 122%;
+}
+
+.profile, .skills, .stack, .education, .experience{
+	display: flex;
+	margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-title, .skills-title, .stack-title, .education-title, .experience-title{
+	width: 20%;
+}
+
+.profile-title h2, .skills-title h2, .stack-title h2{
+	font-size: 150%;
+	font-style: italic;
+}
+
+.profile-info, .stack-info, .education-info, .experience-info{
+	width: 80%;
+}
+
+.profile-info p{
+	font-size: 144%;
+    padding-right: 6.5em;
+    line-height: 24px;
+}
+
+.stack-title h2{
+	display: flex;
+}
+
+.skills-info{
+	padding-right: 26px;
+	width: 20%;
+}
+
+.skills-info h2{
+	margin-bottom: 6px;
+    margin-right: 10px;
+}
+
+.stack-info{
+	display: flex;
+}
+
+.stack-info ul{
+	font-size: medium;
+	line-height: 1.4;
+	width: 20%;
+}
+
+.bordered{
+	border-bottom: 1px solid #ccc;
+}
+
+.experience-info__title{
+	display: flex;
+	justify-content: space-between;
+}
+
+.experience-about{
+	padding-right: 4em;
+}
+
+.experience-about p{
+	line-height: 1.4;
+	margin: 0.75em 0 1em 0;
+}

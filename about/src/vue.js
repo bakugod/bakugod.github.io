@@ -11,28 +11,11 @@ new Vue({
   async mounted () {
     const response = await fetch(this.url)
     const json = await response.json()
-
+    console.log(json)
     this.items = json.map((repo) => ({
       name: repo.name,
-      link: repo.html_url,
-      homepage: repo.homepage || null,
+      homepage: repo.homepage,
       show: false,
     }))
-   this.items.forEach((repo, idx) => {  
-        setTimeout(() => {
-          repo.show = true
-          setTimeout(() => {
-            repo.show = false
-          }, this.timeout + 100)
-        }, this.timeout * idx)
-      setInterval(() => {
-      	setTimeout(() => {
-          repo.show = true
-          setTimeout(() => {
-            repo.show = false
-          }, this.timeout + 100)
-        }, this.timeout * idx)
-      }, this.items.length * this.timeout)
-    })
    }
 });
