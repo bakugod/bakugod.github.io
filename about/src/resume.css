@@ -5,7 +5,17 @@ body{
 	color: #444;
 }
 
-body, h1, h2, h3, h4, h5, ul, ol, li, div, p{
+body, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+ul, 
+ol, 
+li, 
+div, 
+p{
 	margin: 0;
 }
 
@@ -17,11 +27,16 @@ a:hover{
 	text-decoration: none;
 }
 
-h1, h2, h3, h4, h5{
+h1, 
+h2, 
+h3, 
+h4, 
+h5{
 	font-weight: normal;
 }
 
-ul, li{
+ul, 
+li{
 	padding: 0;
 }
 
@@ -74,23 +89,38 @@ li{
 	font-size: 122%;
 }
 
-.profile, .skills, .stack, .education, .experience{
+.profile, 
+.skills, 
+.stack, 
+.education, 
+.experience{
 	display: flex;
 	margin-bottom: 2em;
     padding-bottom: 2em;
     border-bottom: 1px solid #ccc;
 }
 
-.profile-title, .skills-title, .stack-title, .education-title, .experience-title{
+.profile-title, 
+.skills-title, 
+.stack-title, 
+.education-title, 
+.experience-title{
 	width: 20%;
 }
 
-.profile-title h2, .skills-title h2, .stack-title h2{
+.profile-title h2, 
+.skills-title h2, 
+.stack-title h2,
+.education-title h2, 
+.experience-title h2{
 	font-size: 150%;
 	font-style: italic;
 }
 
-.profile-info, .stack-info, .education-info, .experience-info{
+.profile-info, 
+.stack-info, 
+.education-info, 
+.experience-info{
 	width: 80%;
 }
 
