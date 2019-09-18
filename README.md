@@ -1,3 +1,3 @@
 # bakugod.github.io
 
-warehouse of my old profects
+warehouse of my old projects
